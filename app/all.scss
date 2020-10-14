@@ -1,0 +1,10 @@
+//Estilos globales
+@import "globalCSS/estilos_globales";
+@import "globalCSS/gliphicons";
+@import "globalCSS/mensajes";
+//Partial header
+@import "partials/header/estilo.header";
+//Aplicacion
+@import 'components/home/estilo.home';
+@import 'components/blog/estilo.blog';
+@import 'components/login/estilo.login';

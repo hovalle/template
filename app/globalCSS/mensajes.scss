@@ -1,0 +1,160 @@
+/********* NOTIFICIONES *********/
+.notificationcontent{
+    position: fixed;
+    z-index: 100000!important;
+    right: 10px;
+    top: 50px;
+    max-width: 350px;
+    height: auto;
+    cursor: pointer;
+}
+
+.notificationcontent > .notification-item{
+    display: flex;
+    background: rgba(0,0,0,0.94);
+    width: 350px;
+    height: auto;
+    color: #fff;
+    margin-bottom: 9px;
+    box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.77);
+    -webkit-box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.77);
+}
+
+.notificationcontent > .notification-item:before{
+    content: "";
+    background: #333;
+    width: 36px;
+}
+
+.notificationcontent > .notification-item.info > .contenido > .remitente > span{
+    background-color: #00a1ff;
+}
+
+.notificationcontent > .notification-item.success > .contenido > .remitente > span{
+    background-color: #00c733;
+}
+
+.notificationcontent > .notification-item.danger > .contenido > .remitente > span{
+    background-color: #ff0000;
+}
+
+.notificationcontent > .notification-item.warning > .contenido > .remitente > span{
+    background-color: #ff5f0a;
+}
+
+.notificationcontent > .notification-item > .contenido > .remitente > span{
+    color: #fff;
+    padding: 3px 9px 3px 20px;
+    border-radius: 0 0 0 25px;
+}
+
+.notificationcontent > .notification-item.success:before{
+    background: -webkit-linear-gradient(#00e653, #00a20d);
+    background: -o-linear-gradient(#00e653, #00a20d);
+    background: linear-gradient(#00e653, #00a20d);
+}
+
+.notificationcontent > .notification-item.danger:before{
+    background: -webkit-linear-gradient(#ff0000, #bb0000);
+    background: -o-linear-gradient(#ff0000, #bb0000);
+    background: linear-gradient(#ff0000, #bb0000);
+}
+
+.notificationcontent > .notification-item.warning:before{
+    background: -webkit-linear-gradient(#ff8942, #e2531b);
+    background: -o-linear-gradient(#ff8942, #e2531b);
+    background: linear-gradient(#ff8942, #e2531b);
+}
+
+.notificationcontent > .notification-item.info:before{
+    background: -webkit-linear-gradient(#00c4ff, #0065e2);
+    background: -o-linear-gradient(#00c4ff, #0065e2);
+    background: linear-gradient(#00c4ff, #0065e2);
+}
+
+.notificationcontent > .notification-item > .icon {
+    height: 100%;
+    display: block;
+    top: auto;
+    bottom: auto;
+    margin: auto 0px auto -27px;
+    font-size: 21px;
+    color:rgba(255, 255, 255, 0.85);
+}
+
+.notificationcontent > .notification-item > .contenido {
+    width: 330px;
+    color: #eee;
+    padding: 5px 15px 10px 13px;
+    text-align: justify;
+}
+
+.notificationcontent > .notification-item > .contenido > span > a {
+    color : #2DBEEA;
+    text-decoration : underline;
+}
+
+.notificationcontent > .notification-item > .contenido > .title{
+    width: 100%;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.notificationcontent > .notification-item > .contenido > .title:after{
+    content: "";
+    display: block;
+    left: 10px;
+    margin-top: 2px;
+    border-bottom: solid 1px #343f44;
+}
+
+.notificationcontent > .notification-item > .contenido > .content{
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.notificationcontent > .notification-item > .contenido > .remitente{
+    text-align: right;
+    display: block;
+    text-shadow: 1px 1px 8px #777;
+    font-size: 12px;
+    font-weight: bold;
+    top: -3px;
+    right: -15px;
+    position: relative;
+}
+
+.fade-enter {
+    animation: fade_enter 0.4s linear;
+    -webkit-animation: fade_enter 0.4s linear;
+    -moz-box-shadow: fade_enter 0.4s linear;
+}
+
+@keyframes fade_enter {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+@-webkit-keyframes fade_enter {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+.fade-leave {
+    animation: fade_leave 0.4s linear;
+    -webkit-animation: fade_leave 0.4s linear;
+    -moz-box-shadow: fade_leave 0.4s linear;
+}
+
+@keyframes fade_leave {
+    from { opacity:1;margin-left: 0px; }
+    to { opacity:0;margin-left: 350px; }
+}
+
+@-webkit-keyframes fade_leave {
+    from { opacity:1;margin-left: 0px; }
+    to { opacity:0;margin-left: 350px; }
+}
